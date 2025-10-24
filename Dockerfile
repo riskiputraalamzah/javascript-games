@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:20
 
 EXPOSE 3001 3005
 
@@ -29,4 +29,5 @@ COPY .git ./.git
 COPY electron ./electron
 
 WORKDIR /shapez.io/gulp
+ENV NODE_OPTIONS=--openssl-legacy-provider
 ENTRYPOINT ["yarn", "gulp"]
