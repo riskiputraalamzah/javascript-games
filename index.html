@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modul Client Side Jatim</title>
+
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Form untuk memilih username, level, dan senjata -->
+      <div class="box-game" style="display: flex">
+        <img src="./assets/Sprites/shooter.png" alt="" />
+        <div class="form-group information">
+          <input
+            type="text"
+            id="username"
+            placeholder="Input Username"
+            autocomplete="off"
+          />
+          <select name="" id="" autocomplete="off">
+            <option value="">Select Level</option>
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+          </select>
+        </div>
+
+        <!-- Pilihan senjata -->
+        <div class="choose-gun">
+          <div class="gun">
+            <img src="./assets/Sprites/gun1.png" alt="" />
+            <input type="radio" name="gun" value="gun1" />
+          </div>
+          <div class="gun">
+            <img src="./assets/Sprites/gun2.png" alt="" />
+            <input type="radio" name="gun" value="gun2" />
+          </div>
+        </div>
+
+        <!-- Pilihan target -->
+        <div class="choose-targets">
+          <div class="target">
+            <img src="./assets/Sprites/target1.png" alt="" />
+            <input type="radio" name="target" value="target1" />
+          </div>
+          <div class="target">
+            <img src="./assets/Sprites/target2.png" alt="" />
+            <input type="radio" name="target" value="target2" />
+          </div>
+          <div class="target">
+            <img src="./assets/Sprites/target3.png" alt="" />
+            <input type="radio" name="target" value="target3" />
+          </div>
+        </div>
+
+        <!-- Tombol untuk memulai permainan dan melihat instruksi -->
+        <div class="buttons">
+          <button class="play-game">Play Game</button>
+          <button class="instruction">Instruction</button>
+        </div>
+      </div>
+
+      <!-- Area permainan -->
+      <div class="game-area" style="display: none">
+        <canvas
+          id="game-canvas"
+          width="1000"
+          height="600"
+          style="position: absolute; top: 0; left: 0"
+        ></canvas>
+        <div class="game-info">
+          <div class="player-info">
+            <span id="player-name">Name : Putra</span>
+            <span id="player-score">Score: 0</span>
+            <span id="game-timer">Time : 0s</span>
+          </div>
+        </div>
+        <!-- Papan peringkat -->
+        <div class="leaderboard">
+          <h3>Leaderboard</h3>
+          <button id="sort-score">Sort by Score</button>
+          <div id="leaderboard-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal instruksi -->
+    <div id="instruction-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>How To Play</h2>
+        <ol>
+          <li>Input Username</li>
+          <li>Point the pointer at the target</li>
+          <li>Click to shoot</li>
+          <li>Get as many points as possible</li>
+          <li>Enjoy</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Link ke file JavaScript -->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
