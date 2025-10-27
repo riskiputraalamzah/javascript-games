@@ -1,5 +1,17 @@
 # Hexaria Games 🎮✨
 
+---
+
+### 👨‍💻 Developed by
+
+[**FatchurR**](https://github.com/FatchurR)
+
+### 🌐 Live Demo
+
+👉 [**Play Hexaria Online**](https://fatchurr.github.io/Hexaria-Games/)
+
+---
+
 Heyyo, Bestie! Welcome to Hexaria Games! Game browser keren yang bakal bikin kamu ketagihan~
 
 ![Hexaria Games Banner](assets/images/logoSmartOne.jpeg)
